@@ -1,0 +1,20 @@
+{
+  "name": "aws-meetup-terraform-presentation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@dschau/spectacle-code-slide": "~0.4.0",
+    "lodash.kebabcase": "~4.1.1",
+    "marked": "~0.3.19",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "~2.2.7",
+    "spectacle-scripts": "2.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
