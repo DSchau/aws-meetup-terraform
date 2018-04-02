@@ -23,6 +23,9 @@ export const ImprovementsList = () => (
     <ListItem>Find a better way to install terraform in Ubuntu</ListItem>
     <ListItem>Comment on PR with Terraform Plan output</ListItem>
     <ListItem>Modularize (with&hellip; modules) the TF config</ListItem>
+    <ListItem>
+      Find a way to sync remote (existing) AWS state with local TF
+    </ListItem>
   </List>
 );
 
