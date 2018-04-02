@@ -1,5 +1,5 @@
 import React from 'react';
-import { CodePane, Heading, Image } from 'spectacle';
+import { Heading, Image } from 'spectacle';
 
 export const CircleCiIntro = () => (
   <Heading size={2} fit caps>CircleCI</Heading>
@@ -22,7 +22,16 @@ ConfigFile.Props = {
   ranges: [
     { loc: [0, 100 ], title: 'CircleCI Config' },
     { loc: [1, 5 ] },
+    { loc: [7, 12] },
+    { loc: [12, 15] },
     { loc: [25, 30 ]},
     { loc: [49, 100 ]}
-  ]
+  ],
+  notes: `
+- Here's the CircleCI config
+- Job orchestration
+- Installing terraform executable
+- Adding it to my path
+- Using a workflow
+  `
 };

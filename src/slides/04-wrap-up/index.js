@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'spectacle';
+import { Heading, Link, List, ListItem } from 'spectacle';
 
 import TwitterIcon from 'react-icons/lib/fa/twitter';
 import GithubIcon from 'react-icons/lib/fa/github';
@@ -9,6 +9,37 @@ const images = {
   thankYou: 'https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif',
   questions: 'https://media.giphy.com/media/l4FGroaKiE5uuMBiM/giphy.gif'
 };
+
+export const Improvements = () => (
+  <Heading size={2} caps>Improvements</Heading>
+);
+
+export const ImprovementsList = () => (
+  <List>
+    <ListItem>Add in environment support</ListItem>
+    <ListItem>DRY up my CircleCI config file</ListItem>
+    <ListItem>Find a better way to install terraform in Ubuntu</ListItem>
+    <ListItem>Comment on PR with Terraform Plan output</ListItem>
+    <ListItem>Modularize (with&hellip; modules) the TF config</ListItem>
+  </List>
+);
+
+export const Links = () => (
+  <span>
+    <Heading size={2} caps>Links</Heading>
+    <List>
+      {
+        [
+          ['https://github.com/dschau/infrastructure', 'Github Repo'],
+          ['https://www.terraform.io/', 'Terraform']
+        ]
+          .map(([link, text]) => (
+            <ListItem><Link href={link}>{text}</Link></ListItem>
+          ))
+      }
+    </List>
+  </span>
+);
 
 export const Questions = () => null;
 

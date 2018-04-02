@@ -29,7 +29,7 @@ export default class Presentation extends React.Component {
     return (
       <Deck
         progress="bar"
-        transition={['zoom', 'slide']}
+        transition={['slide']}
         transitionDuration={500}
         theme={theme}
       >

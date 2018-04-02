@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Fill, Image, Layout, Link, List, S } from "spectacle";
+import { Heading, Fill, Image, Layout, Link, S } from "spectacle";
 
 import TwitterIcon from 'react-icons/lib/fa/twitter';
 import GithubIcon from 'react-icons/lib/fa/github';
