@@ -2,12 +2,15 @@ import React from "react";
 import { Notes, Slide, SlideSet } from "spectacle";
 import marked from "marked";
 import dasherize from "lodash.kebabcase";
-import { CodeSlide } from "@dschau/spectacle-code-slide";
+import CodeSlide from "@dschau/spectacle-code-slide";
 
-import * as INTRO from "./01-introduction-to-css-and-js";
+import * as INTRO from "./01-intro";
+import * as TERRAFORM from './02-terraform';
+import * as CIRCLE_CI from './03-circleci';
+import * as WRAP_UP from './04-wrap-up';
 
 export default function makeSlides() {
-  return [INTRO].map((Slides, rootIndex) => {
+  return [INTRO, TERRAFORM, CIRCLE_CI, WRAP_UP].map((Slides, rootIndex) => {
     return (
       <SlideSet key={rootIndex}>
         {Object.keys(Slides).map((key, index) => {

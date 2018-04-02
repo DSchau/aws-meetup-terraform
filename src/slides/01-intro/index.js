@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Appear, Heading, Fill, Image, Layout, Link } from "spectacle";
+import React from "react";
+import { Heading, Fill, Image, Layout, Link, List, S } from "spectacle";
 
 import TwitterIcon from 'react-icons/lib/fa/twitter';
 import GithubIcon from 'react-icons/lib/fa/github';
@@ -137,7 +137,17 @@ TheProject.Props = {
 export const ProjectDescription = () => (
   <span>
     <Image src={images.terraform} style={{ height: 250 }} />
-    <Appear><Image src={images.circleci} style={{ height: 200 }} /></Appear>
-    <Appear><Image src={images.aws} style={{ height: 75 }} /></Appear>
+    <Image src={images.circleci} style={{ height: 200 }} />
+    <Image src={images.aws} style={{ height: 75 }} />
   </span>
+);
+
+export const ButWhy = () => (
+  <Heading size={3} caps>
+    But <S type="italic">why</S>
+  </Heading>
+);
+
+export const BecauseReasons = () => (
+  <Image src={require('./assets/images/because-reasons.jpeg')} />
 );

@@ -17,9 +17,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@dschau/spectacle-code-slide@~0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@dschau/spectacle-code-slide/-/spectacle-code-slide-0.4.0.tgz#080603344a2f551d46b66f44c5f0286020e6bc66"
+"@dschau/spectacle-code-slide@~0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@dschau/spectacle-code-slide/-/spectacle-code-slide-0.5.2.tgz#7df677a69db8d638c9a1a21bf3a30bf6da6a8cc1"
   dependencies:
     component-raf "^1.2.0"
     component-tween "^1.2.0"
@@ -6658,6 +6658,17 @@ spdy@^3.4.1:
     safe-buffer "^5.0.1"
     select-hose "^2.0.0"
     spdy-transport "^2.0.18"
+
+spectacle-code-slide@~0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/spectacle-code-slide/-/spectacle-code-slide-0.5.2.tgz#64dee35af936da732eaa56da5002705b1d9ea92c"
+  dependencies:
+    component-raf "^1.2.0"
+    component-tween "^1.2.0"
+    lodash.clamp "^4.0.1"
+    lodash.memoize "^4.0.1"
+    lodash.padstart "^4.2.0"
+    prop-types "^15.6.0"
 
 spectacle-scripts@2.0.0:
   version "2.0.0"

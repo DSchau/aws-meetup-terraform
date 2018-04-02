@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@dschau/spectacle-code-slide": "~0.4.0",
+    "@dschau/spectacle-code-slide": "~0.5.2",
     "lodash.kebabcase": "~4.1.1",
     "marked": "~0.3.19",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-icons": "~2.2.7",
+    "spectacle-code-slide": "~0.5.2",
     "spectacle-scripts": "2.0.0"
   },
   "scripts": {
