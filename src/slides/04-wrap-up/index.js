@@ -7,11 +7,13 @@ import WebsiteIcon from 'react-icons/lib/md/web';
 
 const images = {
   thankYou: 'https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif',
-  questions: 'https://media.giphy.com/media/l4FGroaKiE5uuMBiM/giphy.gif'
+  questions: 'https://media.giphy.com/media/l4FGroaKiE5uuMBiM/giphy.gif',
 };
 
 export const Improvements = () => (
-  <Heading size={2} caps>Improvements</Heading>
+  <Heading size={2} caps>
+    Improvements
+  </Heading>
 );
 
 export const ImprovementsList = () => (
@@ -26,17 +28,18 @@ export const ImprovementsList = () => (
 
 export const Links = () => (
   <span>
-    <Heading size={2} caps>Links</Heading>
+    <Heading size={2} caps>
+      Links
+    </Heading>
     <List>
-      {
-        [
-          ['https://github.com/dschau/infrastructure', 'Github Repo'],
-          ['https://www.terraform.io/', 'Terraform']
-        ]
-          .map(([link, text]) => (
-            <ListItem><Link href={link}>{text}</Link></ListItem>
-          ))
-      }
+      {[
+        ['https://github.com/dschau/infrastructure', 'Github Repo'],
+        ['https://www.terraform.io/', 'Terraform'],
+      ].map(([link, text]) => (
+        <ListItem>
+          <Link href={link}>{text}</Link>
+        </ListItem>
+      ))}
     </List>
   </span>
 );
@@ -44,10 +47,10 @@ export const Links = () => (
 export const Questions = () => null;
 
 Questions.Props = {
-  bgImage: images.questions
+  bgImage: images.questions,
 };
 
-export const FinTheEndThatsAllFolks = () =>
+export const FinTheEndThatsAllFolks = () => (
   <div
     style={{
       display: 'flex',
@@ -55,26 +58,26 @@ export const FinTheEndThatsAllFolks = () =>
       height: '85vh',
       width: '80vw',
       alignItems: 'flex-end',
-      justifyContent: 'flex-end'
+      justifyContent: 'flex-end',
     }}
   >
     {[
       {
         href: 'https://twitter.com/schaudustin',
         Icon: TwitterIcon,
-        text: '@schaudustin'
+        text: '@schaudustin',
       },
       {
         href: 'https://github.com/dschau',
         Icon: GithubIcon,
-        text: 'dschau'
+        text: 'dschau',
       },
       {
         href: 'https://dustinschau.com',
         Icon: WebsiteIcon,
-        text: 'website'
-      }
-    ].map(({ href, Icon, text }) =>
+        text: 'website',
+      },
+    ].map(({ href, Icon, text }) => (
       <Link
         href={href}
         textColor="white"
@@ -86,8 +89,9 @@ export const FinTheEndThatsAllFolks = () =>
         <Icon color="white" style={{ marginRight: 6 }} />
         {text}
       </Link>
-    )}
-  </div>;
+    ))}
+  </div>
+);
 
 FinTheEndThatsAllFolks.Props = {
   bgImage: images.thankYou,
@@ -96,5 +100,5 @@ One final thank you to the organizers and sponsors of this conference, and for g
 I'd like to also thank each of the attendees. Without you, each of us would be speaking to an empty room, and where's the fun in that!?
   
 ... and finally, I'd like to thank everyone who attended my NebraskaJS meetup, in particular [Matthew Steele](https://twitter.com/mattdsteele?lang=en), for invaluable advice and support with an earlier iteration of this talk. In addition, [Phil Plückthun](https://twitter.com/_philpl) for some great advice, as well.
-  `
+  `,
 };

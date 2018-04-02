@@ -1,9 +1,7 @@
 // Import React
 import React from 'react';
 
-import {
-  Deck,
-} from 'spectacle';
+import { Deck } from 'spectacle';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';

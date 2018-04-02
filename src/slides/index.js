@@ -1,10 +1,10 @@
-import React from "react";
-import { Notes, Slide, SlideSet } from "spectacle";
-import marked from "marked";
-import dasherize from "lodash.kebabcase";
-import CodeSlide from "@dschau/spectacle-code-slide";
+import React from 'react';
+import { Notes, Slide, SlideSet } from 'spectacle';
+import marked from 'marked';
+import dasherize from 'lodash.kebabcase';
+import CodeSlide from '@dschau/spectacle-code-slide';
 
-import * as INTRO from "./01-intro";
+import * as INTRO from './01-intro';
 import * as TERRAFORM from './02-terraform';
 import * as CIRCLE_CI from './03-circleci';
 import * as WRAP_UP from './04-wrap-up';
@@ -33,11 +33,11 @@ export default function makeSlides() {
               <Notes>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: marked((Props.notes || "").trim())
+                    __html: marked((Props.notes || '').trim()),
                   }}
                 />
               </Notes>
-              {typeof Content === "function" && <Content />}
+              {typeof Content === 'function' && <Content />}
             </Slide>
           );
         })}
